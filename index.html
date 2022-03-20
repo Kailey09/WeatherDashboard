@@ -10,40 +10,90 @@
     </head>
 
     <body>
-        <header>Weather Dashboard</header>
-        <div class="card">
-            <div class="search">
-                <input type="text" class="search">
-                <button>Search</button>
+        <header class="text-center fs-1">Weather Dashboard</header>
+        <section>
+            <div>
+                <div class="search">
+                    <input type="text" class="search">
+                    <button>Search</button>
+                </div>
             </div>
+        </section>
+
+        <div class="current weather row align-items-center border border-dark">
+          <div>
+            <div>
+                City
+                <p>Date</p>
+                <img>
+            </div>
+            <div>
+                Temp
+                <p></p>
+            </div>
+            <div>
+                Wind
+                <p></p>
+            </div>
+            <div>
+                Humidity
+                <p></p>
+            </div>
+            <div>
+                UV Index
+                <p></p>
+            </div>
+          </div>
         </div>
 
-        <div class="container">
-            <div class="current-info">
-                <div class="date-container">
-                <div class="date" id="date">
-                    (3/19/2022) 
+
+        <section>
+            <div class="forcast row align-items-end  border border-dark">
+                <div class="col">
+                 Date
+                 <img> 
+                 <p>Temp</p>
+                 <p>Wind</p>
+                 <p>Humidity</p>
                 </div>
-                <div class="other" id="current-weather-items">
-                    <div class="place-container">
-                        <div class="city">Flint</div>
-    
-                    </div>
-                    <div class="weather-item">
-                        <p>Temp</p>
-                        <p>30°</p>
-                    </div>
-                    <div class="weather-item">
-                        <p>Wind</p>
-                        <p>9 MPH</p>
-                    </div><div class="weather-item">
-                        <p>Humidity</p>
-                        <p>5%</p>
-                    </div>
+
+                <div class="col">
+                    Date
+                 <img> 
+                 <p>Temp</p>
+                 <p>Wind</p>
+                 <p>Humidity</p>
+                 
                 </div>
+
+                <div class="col">
+                    Date
+                 <img> 
+                 <p>Temp</p>
+                 <p>Wind</p>
+                 <p>Humidity</p>
+                 
+                </div>
+                <div class="col">
+                    Date
+                 <img> 
+                 <p>Temp</p>
+                 <p>Wind</p>
+                 <p>Humidity</p>
+
+                </div>
+
+                <div class="col">
+                    Date
+                 <img> 
+                 <p>Temp</p>
+                 <p>Wind</p>
+                 <p>Humidity</p>
+
                 </div>
             </div>
-        </div>
+
+        </section>
         
        
 
