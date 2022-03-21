@@ -17,12 +17,12 @@ var currentWeather = function() {
 
 var displayWeather = function(data) {
     document.getElementById("temp").textContent = data.main.temp
+    document.getElementById("date").textContent = moment().format("M/D/YYYY");
 
-    document.getElementById("date").textContent = moment().format("M/D/YYYY")
-    
 }
 
 
 // 5 day forcast same as current weather
+// for loop
 
 document.getElementById("btn").addEventListener("click", currentWeather);
