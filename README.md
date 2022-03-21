@@ -7,3 +7,5 @@ This is a weather dashboard that gives you the current weather and a 5 day forca
 * BootStap
 * Javascript
 * OpenWeather API
+# ScreenShot
+![Screen Shot 2022-03-20 at 8 46 31 PM](https://user-images.githubusercontent.com/98546041/159195720-641359db-b333-48cf-ae49-cb292dd2061e.png)
