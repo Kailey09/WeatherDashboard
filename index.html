@@ -13,23 +13,24 @@
         <header class="text-center fs-1">Weather Dashboard</header>
         <section>
             <div>
-                <div class="search">
-                    <input type="text" class="search">
-                    <button>Search</button>
+                <div class="search m-2">
+                    <input type="text" class="search" id="input-text">
+                    <button id="btn">Search</button>
                 </div>
             </div>
+            <div class="saved cities"></div>
         </section>
 
-        <div class="current weather row align-items-center border border-dark">
+        <div class="current weather row align-items-center border border-dark m-3 ">
           <div>
             <div>
-                City
-                <p>Date</p>
+                <h2 class="citynames"></h2>
+                <p id="date"></p>
                 <img>
             </div>
             <div>
                 Temp
-                <p></p>
+                <p id="temp"></p>
             </div>
             <div>
                 Wind
@@ -48,7 +49,7 @@
 
 
         <section>
-            <div class="forcast row align-items-end  border border-dark">
+            <div class="forcast row align-items-end  border border-dark m-2 ">
                 <div class="col">
                  Date
                  <img> 
@@ -107,7 +108,7 @@
 
 
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./script.js"></script>
     </body>
 
