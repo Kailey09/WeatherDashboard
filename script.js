@@ -18,6 +18,9 @@ var currentWeather = function() {
 var displayWeather = function(data) {
     document.getElementById("temp").textContent = data.main.temp
     document.getElementById("date").textContent = moment().format("M/D/YYYY");
+    document.getElementById("speed").textContent = data.wind.speed
+    document.getElementById("humidity").textContent = data.main.humidity
+    document.getElementById("name").textContent = data.name
 
 }
 
