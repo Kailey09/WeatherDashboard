@@ -26,6 +26,13 @@ var displayWeather = function(data) {
 
 
 // 5 day forcast same as current weather
-// for loop
+var FiveDayForcast = function() {
+    var apiKey = "b1893f739799a842b765fe8a4f5b519b";
+    var city = document.getElementById("input-text").value;
+    var fiveDayApi = "api.openweathermap.org/data/2.5/forecast?q="+ city+ "&appid=" + apiKey;
+
+    //for loop
+}
+
 
 document.getElementById("btn").addEventListener("click", currentWeather);
