@@ -41,6 +41,10 @@ function fiveDayForcast() {
         var list = data.list
         list.forEach(function(item, index){
             document.getElementById("temp" + index).textContent = item.main.temp;
+            document.getElementById("wind" + index).textContent = item.wind.speed;
+            document.getElementById("hot" + index).textContent = item.main.humidity;
+            document.getElementById("date" + index).textContent = item.dt_txt;
+            
         })
         
     }) 
