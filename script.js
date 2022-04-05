@@ -44,8 +44,8 @@ function fiveDayForcast() {
             document.getElementById("wind" + index).textContent = item.wind.speed;
             document.getElementById("hot" + index).textContent = item.main.humidity;
             document.getElementById("date" + index).textContent = item.dt_txt;
-            
         })
+
         
     }) 
         
