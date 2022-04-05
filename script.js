@@ -25,14 +25,29 @@ var displayWeather = function(data) {
 }
 
 
-// 5 day forcast same as current weather
-var FiveDayForcast = function() {
+// 5 day forcast 
+function fiveDayForcast() {
     var apiKey = "b1893f739799a842b765fe8a4f5b519b";
     var city = document.getElementById("input-text").value;
-    var fiveDayApi = "api.openweathermap.org/data/2.5/forecast?q="+ city+ "&appid=" + apiKey;
+    console.log(city);
+    var fiveDayApi = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&cnt=5&units=imperial&appid=" + apiKey;
 
-    //for loop
+    fetch(fiveDayApi)
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        console.log(data);
+        var list = data.list
+        list.forEach(function(item, index){
+            document.getElementById("temp" + index).textContent = item.main.temp;
+        })
+        
+    }) 
+        
 }
 
 
+
 document.getElementById("btn").addEventListener("click", currentWeather);
+document.getElementById("btn").addEventListener("click", fiveDayForcast);
